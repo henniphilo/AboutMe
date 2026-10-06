@@ -14,8 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
+  // Only sections — archive images stay visible (no nested opacity:0)
   const targets = document.querySelectorAll(
-    ".section-about, .section-archive, .section-practice, .section-profile, .section-contact, .archive-item"
+    ".section-about, .section-archive, .section-practice, .section-profile, .section-contact"
   );
 
   targets.forEach((el) => el.classList.add("reveal"));
@@ -28,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         obs.unobserve(entry.target);
       });
     },
-    { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
+    { rootMargin: "0px 0px -5% 0px", threshold: 0.08 }
   );
 
   targets.forEach((el) => observer.observe(el));
