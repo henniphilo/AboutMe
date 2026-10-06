@@ -25,9 +25,9 @@
         <nav class="site-nav" aria-label="Main navigation">
           <ul>
             <li><a href="#about">About</a></li>
+            <li><a href="#profile">Profile</a></li>
             <li><a href="#archive">Archive</a></li>
             <li><a href="#practice">Practice</a></li>
-            <li><a href="#profile">Profile</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -36,13 +36,24 @@
 
     <main>
       <!-- ========== HERO ========== -->
+      <!-- Portrait: images/portrait.jpg — representative image -->
       <section id="hero" class="section section-hero" aria-label="Intro">
-        <div class="section__inner">
-          <p class="eyebrow">Video &amp; Theatre Artist</p>
-          <h1 class="hero-title">Henrike Wiemann</h1>
-          <p class="hero-intro">
-            Working across live performance, moving image and code.
-          </p>
+        <div class="section__inner section__inner--hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Video &amp; Theatre Artist</p>
+            <h1 class="hero-title">Henrike Wiemann</h1>
+            <p class="hero-intro">
+              Working across live performance, moving image and code.
+            </p>
+          </div>
+          <figure class="hero-portrait">
+            <img
+              src="images/portrait.jpg"
+              alt="Henrike Wiemann"
+              width="819"
+              height="1024"
+            />
+          </figure>
         </div>
       </section>
 
@@ -100,104 +111,6 @@
         </div>
       </section>
 
-      <!-- ========== VISUAL ARCHIVE ========== -->
-      <!--
-        Replace image files in /images (keep filenames) and fill figcaption / alt.
-        No project pages — visual archive / collage only.
-      -->
-      <section id="archive" class="section section-archive">
-        <div class="section__inner section__inner--archive">
-          <h2 class="section-label">Visual Archive</h2>
-          <div class="archive-grid">
-            <figure class="archive-item archive-item--a">
-              <div class="archive-frame">
-                <img
-                  src="images/image-01.jpg"
-                  alt="Archive image 01"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption><!-- e.g. Unter Tieren — work in progress --></figcaption>
-            </figure>
-            <figure class="archive-item archive-item--b">
-              <div class="archive-frame">
-                <img
-                  src="images/image-02.jpg"
-                  alt="Archive image 02"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption></figcaption>
-            </figure>
-            <figure class="archive-item archive-item--c">
-              <div class="archive-frame">
-                <img
-                  src="images/image-03.jpg"
-                  alt="Archive image 03"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption></figcaption>
-            </figure>
-            <figure class="archive-item archive-item--d">
-              <div class="archive-frame">
-                <img
-                  src="images/image-04.jpg"
-                  alt="Archive image 04"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption></figcaption>
-            </figure>
-            <figure class="archive-item archive-item--e">
-              <div class="archive-frame">
-                <img
-                  src="images/image-05.jpg"
-                  alt="Archive image 05"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption></figcaption>
-            </figure>
-            <figure class="archive-item archive-item--f">
-              <div class="archive-frame">
-                <img
-                  src="images/image-06.jpg"
-                  alt="Archive image 06"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption></figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- ========== PRACTICE ========== -->
-      <section id="practice" class="section section-practice">
-        <div class="section__inner">
-          <h2 class="section-label">Practice</h2>
-          <ul class="practice-list">
-            <li class="practice-list__item practice-list__item--lg">
-              LIVE PERFORMANCE
-            </li>
-            <li class="practice-list__item">MOVING IMAGE</li>
-            <li class="practice-list__item practice-list__item--md">VIDEO</li>
-            <li class="practice-list__item practice-list__item--offset">
-              CODE
-            </li>
-            <li class="practice-list__item practice-list__item--lg">
-              REAL-TIME SYSTEMS
-            </li>
-            <li class="practice-list__item practice-list__item--accent">AI</li>
-            <li class="practice-list__item practice-list__item--md">STAGE</li>
-            <li class="practice-list__item practice-list__item--wide">
-              INTERDISCIPLINARY CREATION
-            </li>
-          </ul>
-        </div>
-      </section>
-
       <!-- ========== SHORT PROFILE ========== -->
       <section id="profile" class="section section-profile">
         <div class="section__inner section__inner--split">
@@ -211,7 +124,8 @@
                     >MA Theatre Education</span
                   >
                   <span class="profile-entry__meta"
-                    >Berlin University of the Arts (UdK)</span
+                    >Berlin University of the Arts (UdK)<br />
+                    2018–2021</span
                   >
                 </li>
                 <li>
@@ -226,7 +140,8 @@
                     >BA Speech Communication Science</span
                   >
                   <span class="profile-entry__meta"
-                    >Martin Luther University Halle-Wittenberg</span
+                    >Martin Luther University Halle-Wittenberg<br />
+                    2014–2018</span
                   >
                 </li>
               </ul>
@@ -263,27 +178,114 @@
         </div>
       </section>
 
-      <!-- ========== CONTACT ========== -->
+      <!-- ========== VISUAL ARCHIVE ========== -->
       <!--
-        TODO: set your real email, Instagram and Vimeo URLs.
-        GitHub uses the known account from this repo.
+        Replace image files in /images (keep filenames) and fill figcaption / alt.
+        No project pages — visual archive / collage only.
       -->
+      <section id="archive" class="section section-archive">
+        <div class="section__inner section__inner--archive">
+          <h2 class="section-label">Visual Archive</h2>
+          <div class="archive-grid">
+            <figure class="archive-item archive-item--a">
+              <div class="archive-frame">
+                <img
+                  src="images/image-01.jpg"
+                  alt="Stage performance with ensemble and media set"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption></figcaption>
+            </figure>
+            <figure class="archive-item archive-item--b">
+              <div class="archive-frame">
+                <img
+                  src="images/image-02.jpg"
+                  alt="Live video direction at a studio control desk"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption></figcaption>
+            </figure>
+            <figure class="archive-item archive-item--c">
+              <div class="archive-frame">
+                <img
+                  src="images/image-03.jpg"
+                  alt="Working behind a cinema camera during a live event"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption></figcaption>
+            </figure>
+            <figure class="archive-item archive-item--d">
+              <a
+                class="archive-frame archive-link"
+                href="images/image-04.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/image-04.jpg"
+                  alt="Setting lights on a film production set"
+                  loading="lazy"
+                />
+              </a>
+              <figcaption></figcaption>
+            </figure>
+            <figure class="archive-item archive-item--f">
+              <div class="archive-frame">
+                <img
+                  src="images/image-06.jpg"
+                  alt="In a puppet and theatre workshop"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== PRACTICE ========== -->
+      <section id="practice" class="section section-practice">
+        <div class="section__inner">
+          <h2 class="section-label">Practice</h2>
+          <ul class="practice-list">
+            <li class="practice-list__item practice-list__item--lg">
+              LIVE PERFORMANCE
+            </li>
+            <li class="practice-list__item">MOVING IMAGE</li>
+            <li class="practice-list__item practice-list__item--md">VIDEO</li>
+            <li class="practice-list__item practice-list__item--offset">
+              CODE
+            </li>
+            <li class="practice-list__item practice-list__item--lg">
+              REAL-TIME SYSTEMS
+            </li>
+            <li class="practice-list__item practice-list__item--accent">AI</li>
+            <li class="practice-list__item practice-list__item--md">STAGE</li>
+            <li class="practice-list__item practice-list__item--wide">
+              INTERDISCIPLINARY CREATION
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ========== CONTACT ========== -->
       <section id="contact" class="section section-contact">
         <div class="section__inner section__inner--split">
           <h2 class="section-label">Contact</h2>
           <div class="section-body">
             <p class="contact-email">
-              <a href="mailto:[CONTACT]">[CONTACT]</a>
+              <a href="mailto:henrike.wiemann@web.de">henrike.wiemann@web.de</a>
             </p>
             <ul class="contact-links">
               <li>
-                <a href="[INSTAGRAM]" target="_blank" rel="noopener noreferrer"
+                <a
+                  href="https://instagram.com/hen.r.ike"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >Instagram</a
-                >
-              </li>
-              <li>
-                <a href="[VIMEO]" target="_blank" rel="noopener noreferrer"
-                  >Vimeo</a
                 >
               </li>
               <li>
