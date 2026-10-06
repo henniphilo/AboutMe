@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio — Video, Theater und Programmierpraxis"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <p class="site-title">
+          <a href="#hero">Name</a>
+        </p>
+        <nav class="site-nav" aria-label="Hauptnavigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#archive">Archive</a></li>
+            <li><a href="#practice">Practice</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="section section-hero" aria-label="Intro">
+        <div class="section__inner">
+          <p class="eyebrow">Video · Theater · Code</p>
+          <h1 class="hero-title">Name</h1>
+          <p class="hero-intro">Kurze Einleitung — Platzhalter.</p>
+        </div>
+      </section>
+
+      <section id="about" class="section section-about">
+        <div class="section__inner section__inner--split">
+          <h2 class="section-label">About</h2>
+          <div class="section-body">
+            <p>About-Text — Platzhalter.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="archive" class="section section-archive">
+        <div class="section__inner">
+          <h2 class="section-label">Visual Archive</h2>
+          <p class="section-lead">Bildbereich — Platzhalter.</p>
+          <div class="archive-placeholder" aria-hidden="true">
+            <div class="archive-placeholder__item archive-placeholder__item--lg">
+              Bild 1
+            </div>
+            <div class="archive-placeholder__item">Bild 2</div>
+            <div class="archive-placeholder__item archive-placeholder__item--wide">
+              Bild 3
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="practice" class="section section-practice">
+        <div class="section__inner">
+          <h2 class="section-label">Practice</h2>
+          <p class="section-lead">Arbeitsweise — Platzhalter.</p>
+          <ul class="practice-list">
+            <li>Begriff 1</li>
+            <li>Begriff 2</li>
+            <li>Begriff 3</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="profile" class="section section-profile">
+        <div class="section__inner section__inner--split">
+          <h2 class="section-label">Short Profile</h2>
+          <dl class="profile-list">
+            <div class="profile-list__row">
+              <dt>Location</dt>
+              <dd>Ort — Platzhalter</dd>
+            </div>
+            <div class="profile-list__row">
+              <dt>Working with</dt>
+              <dd>Zusammenarbeit — Platzhalter</dd>
+            </div>
+            <div class="profile-list__row">
+              <dt>Tools / Methods</dt>
+              <dd>Werkzeuge — Platzhalter</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-contact">
+        <div class="section__inner section__inner--split">
+          <h2 class="section-label">Contact</h2>
+          <div class="section-body">
+            <p class="contact-email">
+              <a href="mailto:kontakt@example.com">kontakt@example.com</a>
+            </p>
+            <ul class="contact-links">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Vimeo</a></li>
+              <li><a href="#">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>&copy; <span id="year">2026</span> Name</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
